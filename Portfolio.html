@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>protfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+
+    body{
+      margin:0;
+      padding:0;
+      background:linear-gradient(135deg,#38bdf8,#2563eb,#0f172a);
+      font-family:'Trebuchet MS',sans-serif;
+      overflow-x:hidden;
+      text-align:center;
+      color:white;
+    }
+
+    /* DARK SECTION EFFECT */
+
+    section{
+      background:rgba(0,0,0,0.08);
+      backdrop-filter:blur(6px);
+    }
+
+    /* BUBBLE EFFECT */
+
+    .bubble-bg::before,
+    .bubble-bg::after{
+      content:'';
+      position:absolute;
+      border-radius:50%;
+      filter:blur(60px);
+      z-index:0;
+    }
+
+    .bubble-bg::before{
+      width:220px;
+      height:220px;
+      background:rgba(255,255,255,0.15);
+      top:20px;
+      left:20px;
+    }
+
+    .bubble-bg::after{
+      width:260px;
+      height:260px;
+      background:rgba(125,211,252,0.2);
+      bottom:20px;
+      right:20px;
+    }
+
+    /* HEADING */
+
+    h1,h2,h3{
+      color:#ffe066;
+      text-shadow:0 0 15px rgba(0,0,0,0.55);
+    }
+
+    /* PARAGRAPH */
+
+    p{
+      color:#d1d5db;
+      text-shadow:0 0 8px rgba(0,0,0,0.35);
+    }
+
+    /* ABOUT TEXT */
+
+    .about-text{
+      color:#facc15;
+    }
+
+    /* CONTACT TEXT */
+
+    .contact-text{
+      color:#93c5fd;
+    }
+
+    /* CARD */
+
+    .glass-card{
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,0.1);
+      transition:0.3s;
+    }
+
+    .glass-card:hover{
+      transform:translateY(-5px);
+    }
+
+    /* THUMBNAIL */
+
+    .thumb-img{
+      width:300px;
+      height:170px;
+      object-fit:cover;
+      display:block;
+      margin:auto;
+      border-radius:18px;
+      border:2px solid rgba(255,255,255,0.2);
+    }
+
+    /* BUTTON */
+
+    .hire-btn{
+      background:#facc15;
+      color:black;
+      padding:14px 32px;
+      border-radius:18px;
+      font-size:18px;
+      font-weight:bold;
+      transition:0.3s;
+      box-shadow:0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .hire-btn:hover{
+      transform:scale(1.05);
+    }
+
+    /* CONTACT */
+
+    .contact-section{
+      background:linear-gradient(135deg,#0f172a,#172554,#1e3a8a);
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <section class="bubble-bg relative overflow-hidden py-20 px-6">
+
+    <div class="relative z-10">
+
+      <h1 class="text-5xl md:text-7xl font-black tracking-wide">
+        Bubble_PlayzZ
+      </h1>
+
+      <p class="mt-5 text-lg md:text-2xl font-semibold">
+        Minecraft Gaming Thumbnail Designer
+      </p>
+
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="py-20 px-6">
+
+    <h2 class="text-5xl font-black mb-8">
+      About Me
+    </h2>
+
+    <p class="about-text max-w-3xl mx-auto text-xl leading-9">
+      I create Minecraft gaming thumbnails with high quality effects,
+      cinematic editing and click-worthy designs.
+    </p>
+
+  </section>
+
+  <!-- THUMBNAILS -->
+
+  <section class="py-16 px-4">
+
+    <h2 class="text-5xl font-black mb-12">
+      My Thumbnails
+    </h2>
+
+    <div class="flex flex-wrap justify-center gap-8">
+
+      <!-- CARD 1 -->
+
+      <div class="glass-card rounded-3xl p-4 max-w-[340px]">
+
+        <img src="thumbnail_1.png" class="thumb-img">
+
+        <div class="mt-5">
+
+          <h3 class="text-3xl font-bold">
+            Minecraft Thumbnail
+          </h3>
+
+          <p class="mt-3 text-lg">
+            High quality Minecraft thumbnail
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="glass-card rounded-3xl p-4 max-w-[340px]">
+
+        <img src="thumbnail_2.png" class="thumb-img">
+
+        <div class="mt-5">
+
+          <h3 class="text-3xl font-bold">
+            Minecraft Thumbnail
+          </h3>
+
+          <p class="mt-3 text-lg">
+            High quality Minecraft thumbnail
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="glass-card rounded-3xl p-4 max-w-[340px]">
+
+        <img src="thumbnail_3.png" class="thumb-img">
+
+        <div class="mt-5">
+
+          <h3 class="text-3xl font-bold">
+            Minecraft Thumbnail
+          </h3>
+
+          <p class="mt-3 text-lg">
+            High quality Minecraft thumbnail
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 4 -->
+
+      <div class="glass-card rounded-3xl p-4 max-w-[340px]">
+
+        <img src="thumbnail_4.png" class="thumb-img">
+
+        <div class="mt-5">
+
+          <h3 class="text-3xl font-bold">
+            Minecraft Thumbnail
+          </h3>
+
+          <p class="mt-3 text-lg">
+            High quality Minecraft thumbnail
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 5 -->
+
+      <div class="glass-card rounded-3xl p-4 max-w-[340px]">
+
+        <img src="thumbnail_5.png" class="thumb-img">
+
+        <div class="mt-5">
+
+          <h3 class="text-3xl font-bold">
+            Minecraft Thumbnail
+          </h3>
+
+          <p class="mt-3 text-lg">
+            High quality Minecraft thumbnail
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- PRICE SECTION -->
+
+<section class="py-20 px-6">
+
+  <h2 class="text-5xl font-black mb-8">
+    Price
+  </h2>
+
+  <div class="glass-card max-w-md mx-auto rounded-3xl p-8">
+
+    <h3 class="text-4xl font-black">
+      ₹50 Only
+    </h3>
+
+    <p class="mt-5 text-xl">
+      Professional Minecraft Gaming Thumbnail
+    </p>
+
+  </div>
+
+</section>
+
+  <!-- CONTACT -->
+
+  <section class="contact-section py-20 px-6">
+
+    <h2 class="text-5xl font-black mb-6">
+      Contact Me
+    </h2>
+
+    <p class="contact-text text-xl mb-8">
+      Join Hardcore Artist Server<br> for
+      Minecraft gaming thumbnails.
+    </p>
+
+  <a 
+  href="https://discord.gg/ZvX4ZvdCK"
+  target="_blank"
+>
+  <button class="hire-btn">
+    Hire Me
+  </button>
+</a>
+
+    <div class="mt-10 text-lg space-y-3">
+
+      <p>Email: aloobhaisponsership@gmail.com</p>
+
+      <p>Discord: Bubble_PlayzZ</p>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
